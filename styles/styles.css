@@ -12,6 +12,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: end;
+    background-position: 50% 50%;
+    animation: animacion-fondo 3s linear infinite;
 }
 #pompurinLove{
     width: 30%;
@@ -35,4 +37,12 @@ body{
     background: #ff7e01;
     color: #fefcf5;
     font-size: 15px;
+}
+@keyframes animacion-fondo {
+    0% {
+        background-position: 0 0, 24px 24px;
+    }
+    100% {
+        background-position: 0 100px, 24px 124px; /* Ajusta los valores según sea necesario para el movimiento deseado */
+    }
 }
