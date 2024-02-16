@@ -16,9 +16,8 @@ body{
 #pompurinLove{
     width: 30%;
     min-width: 400px;
-    position: absolute;
-    bottom: 30%;
-    right: 36%;
+    margin-top: 60%;
+    margin-right: 7%;
 }
 #start{
     color: #ffffff;;
