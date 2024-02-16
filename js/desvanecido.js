@@ -1,25 +1,16 @@
 function displayNone() {
     document.getElementById("audio1").play()
-    setTimeout(()=>{
-        document.getElementById("pompurinLove").style.opacity = "0.88";    
-        document.getElementById("start").style.opacity = "0.88"; 
-    }, 100)
-  setTimeout(()=>{
-        document.getElementById("pompurinLove").style.opacity = "0.75";    
-        document.getElementById("start").style.opacity = "0.75";    
-    }, 150)
-    setTimeout(()=>{
-        document.getElementById("pompurinLove").style.opacity = "0.50";
-        document.getElementById("start").style.opacity = "0.50";
-    }, 300)
-    setTimeout(()=>{
-        document.getElementById("pompurinLove").style.opacity = "0.25";
-        document.getElementById("start").style.opacity = "0.25";
-    }, 450)
-    setTimeout(()=>{
-        document.getElementById("pompurinLove").style.opacity = "0";
-        document.getElementById("start").style.opacity = "0";
-        document.getElementById("pompurinLove").style.display = "none";
-        document.getElementById("pompurinLove").style.display = "none";
-    }, 600)
+    let test = 1; // Inicializamos test a 1
+
+    // Utilizamos un bucle while para ejecutar mientras test sea mayor que 0
+    let interval = setInterval(() => {
+        if (test > 0) {
+            document.getElementById("pompurinLove").style.opacity = test;
+            document.getElementById("start").style.opacity = test;
+            test -= 0.01; // Decrementamos test
+        } else {
+            clearInterval(interval); // Paramos el intervalo cuando test sea menor o igual a 0
+        }
+    }, 10); 
+
 }
