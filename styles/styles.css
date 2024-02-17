@@ -57,7 +57,7 @@ body{
     position: fixed;
     font-family: "Kalam", cursive;
     font-size: 22px;
-    bottom: -4900px;
+    bottom: -4370px;
     text-align: center;
 }
 img{
@@ -68,4 +68,9 @@ img{
 }
 video{
     width: 50%;
+}
+@media only screen and (max-width: 480px) {
+    .mg, .especial, video {
+        width: 88%; /* Cambia el ancho al 80% en dispositivos móviles */
+    }
 }

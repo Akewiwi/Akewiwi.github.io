@@ -1,7 +1,7 @@
 function displayNone() {
     document.getElementById("audio1").play()
     let test = 1; // Inicializamos test a 1
-    let test2 = -4900
+    let test2 = -4370;
     document.getElementById("start").disabled = true;
     // Utilizamos un bucle while para ejecutar mientras test sea mayor que 0
     let interval = setInterval(() => {
@@ -16,7 +16,7 @@ function displayNone() {
     }, 10);
     
     let interval2 = setInterval(() => {
-        if (test2 < 800){
+        if (test2 < 750){
             document.getElementById("context").style.bottom = test2 + "px"
             test2 += 1;
         }
