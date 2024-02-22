@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="assests/0e5b5717427399800658ba17f5c38ffa.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading">
+        <img src="assests/sanrio-emoji.gif" alt="pompurindonut" id="pompurin1">
+        <p id="loading-text">Cargando</p>
+    </div>
+    <audio id="audio1" loop src="https://miguelitomiguel.github.io/assests/can-i-call-you-tonight-sub-espanol.mp3"></audio>
+    <h1 id="h1text">HELLO<br><span>AKEWIWI</span></h1>
+    <div id="Registro">
+        <form action="">
+            <label for="who">Quien es</label>
+            <hr class="hr1">
+            <input type="text" name="who" id="who" placeholder="Al que escucho mas?" oninput="upperCase(this)">
+            <input type="submit" id="submit" value="Check-in" onclick="check()">
+        </form>
+    </div>
+    <div id="testamento">
+        <div id="testamentoFondo">
+            <p id="textoRayado">
+            </p>
+        </div>
+    </div>
+    <script>
+        function upperCase(a) {
+        a.value = a.value.toUpperCase()
+        }
+    </script>
+    <script src="js/formulario.js">
+    </script>
+</body>
+
+</html>
