@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    height:  100%;
+    width: 100%;
+}
+body{
+    background: linear-gradient(#0c0c0c 0%,#0c0c0c 3%,#222222 15%);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#akeLogo{
+    width: 13%;
+    padding-top: 2.2%;
+    padding-left: 4%;
+}
+#titulo1{
+    color: rgba(255, 255, 255, 0.944);
+    
+    font-size: 300%;
+
+}
+#perfiles{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5%;
+}
+#iconos{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.9%;
+    gap: 2%;
+    color: #757575;
+    font-size: 120%;
+    flex-wrap: wrap;
+}
+#icono1{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+#administrar{
+    background-color: transparent;
+    color: #757575;
+    border: 3px solid #757575;
+    padding: 0.7% 2.5% 0.7% 2.5%;
+    font-size: 80%;
+    letter-spacing: 4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 24%;
+    transition: 0.9s ease;
+    text-decoration: none;
+}
+.perfilClick{
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+.perfilClick img{
+    transition: 0.9s ease;
+}
+.perfilClick:hover{
+    color: white;
+}
+
+.perfilClick:hover img{
+    box-sizing: border-box;
+    border: 3.5px solid white;
+
+}
+#administrar:hover{
+    color:white;
+    border: 3px solid white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    #akeLogo{
+        width:30%;
+        padding-left: 0%;
+    }
+    #icono1{
+        width: 200px;
+        height: 200px;
+    }
+    #administrar{
+        padding: 3% 7% 3% 7%;
+        font-size: 120%;
+        bottom: 25%;
+    }
+}
+@media screen and (max-width: 767px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    #akeLogo{
+        padding-top: 7%;
+        width:40%;
+        padding-left: 0%;
+    }
+    #titulo1{
+        text-align: center;
+        font-size: 220%;
+        padding-bottom: 5%;
+    }
+    #iconos{
+        row-gap: 20px;
+    }
+    #administrar{
+        padding: 0.7% 2.5% 0.7% 2.5%;
+        font-size: 110%;
+        bottom: 14%;
+    }
+}
