@@ -124,7 +124,7 @@ body{
         bottom: 14%;
     }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 920px) and (orientation: landscape) {
     #akeLogo{
         padding-top: 5%;
         width:20%;
