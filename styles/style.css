@@ -21,9 +21,7 @@ body{
 }
 #titulo1{
     color: rgba(255, 255, 255, 0.944);
-    
     font-size: 300%;
-
 }
 #perfiles{
     height: 70%;
@@ -124,5 +122,26 @@ body{
         padding: 0.7% 2.5% 0.7% 2.5%;
         font-size: 110%;
         bottom: 14%;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+    #akeLogo{
+        padding-top: 5%;
+        width:20%;
+    }
+    #titulo1{
+        margin-top: -3%;
+        text-align: center;
+        font-size: 220%;
+        padding-bottom: 0%;
+    }
+    #administrar{
+        padding: 0.7% 2.5% 0.7% 2.5%;
+        font-size: 110%;
+        bottom: 10%;
+    }
+    #icono1{
+        width: 120px;
+        height: 120px;
     }
 }
