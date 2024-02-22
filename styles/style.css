@@ -106,23 +106,27 @@ body{
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 920px) and (orientation: landscape) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
     #akeLogo{
-        padding-top: 5%;
-        width:20%;
+        padding-top: 3%;
+        width:22%;
     }
     #titulo1{
-        margin-top: -3%;
+        margin-top: -2.5%;
         text-align: center;
         font-size: 220%;
         padding-bottom: 0%;
     }
     #administrar{
-        padding: 0.7% 2.5% 0.7% 2.5%;
-        font-size: 110%;
-        bottom: 10%;
+        padding: 0.6% 2.3% 0.6% 2.3%;
+        font-size: 100%;
+        bottom: 8%;
     }
     #icono1{
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
 }
