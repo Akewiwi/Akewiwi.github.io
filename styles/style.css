@@ -100,7 +100,7 @@ body{
         bottom: 25%;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
     header{
         display: flex;
         justify-content: center;
