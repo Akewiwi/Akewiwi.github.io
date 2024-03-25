@@ -1,0 +1,222 @@
+:root {
+    --colorCeleste1: #abeeff;
+    --colorCeleste2: #9adcfb;
+    --colorAzul1: #3eb4e3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 100%;
+    background:  linear-gradient(var(--colorCeleste2) 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(to right, var(--colorCeleste2) 2.4000000000000004px, var(--colorCeleste1) 2.4000000000000004px);
+    background-size: 48px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#titulo {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: -3px 0 #76796f, 0 -3px #76796f, 3px 0 #76796f, 0 3px #76796f, 0px 0px 15px #76796f;
+    font-family: "Rubik Bubbles", "Madimi One", Helvetica;
+    position: absolute;
+    top: 35px;
+    display: none;
+}
+#titulo span {
+    color:var(--colorCeleste1);
+    text-shadow: -3px 0 var(--colorAzul1), 0 -3px var(--colorAzul1), 3px 0 var(--colorAzul1), 0 3px var(--colorAzul1), var(--colorAzul1) 0px 0px 15px;
+}
+#login {
+    width: 295px;
+    height: 210px;
+    background: repeating-radial-gradient(white 0% 16%, var(--colorCeleste1) 16% 100%);
+    background-size: 25px 25px;
+    border: 5px solid var(--colorAzul1);
+    box-shadow: 0px 0px 15px var(--colorAzul1);
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 185px;
+    display: none;
+}
+#login form {
+    width: 250px;
+    height: 155px;
+    position: relative;
+    top: -4px;
+    background: #fefcf5;
+    border-radius: 0px 0px 20px 20px;
+    border: #76796f solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-family: "Rubik Spray Paint", cursive;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: -3px 0 #76796f, 0 -3px #76796f, 3px 0 #76796f, 0 3px #76796f, 0px 0px 15px #76796f;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+hr {
+    background: #76796f;
+    width: 80%;
+    height: 3px;
+    margin-top: 5px;
+}
+#inputText {
+    width: 220px;
+    height: 30px;
+    color: #76796f;
+    margin-top: 8px;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-in 1s;
+    outline: none;
+}
+#inputText:focus {
+    border: 3px solid grey;
+}
+#submit{
+    font-family: "Rubik Spray Paint", cursive;
+    color: #ffffff;
+    background: var(--colorCeleste1);
+    width: 180px;
+    height: 35px;
+    border: var(--colorAzul1) solid 3px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    transition: ease-in 0.4s;
+    text-shadow: -3px 0 var(--colorAzul1), 0 -3px var(--colorAzul1), 3px 0 var(--colorAzul1), 0 3px var(--colorAzul1), 0px 0px 15px var(--colorAzul1);
+    font-weight: 1;
+}
+#submit:hover{
+    background: var(--colorAzul1);
+    color: #fefcf5;
+    font-size: 15px;
+}
+#login, #titulo{
+    animation: 2.5s ease-in desvanecido forwards;
+}
+@keyframes desvanecido {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes desvanecido2 {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes desvanecido3 {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#loading {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#ponnyCinna {
+    position: absolute;
+    animation: ponnyMove 12s linear;
+}
+#globosCinna {
+    width: 120px;
+    position: absolute;
+    animation: globosMove 12s linear;
+}
+#loadingText {
+    font-family: "Rubik Spray Paint", cursive;
+    color: #ffffff;
+    text-shadow: -3px 0 #76796f, 0 -3px #76796f, 3px 0 #76796f, 0 3px #76796f, 0px 0px 15px #76796f;
+    font-size: 30px;
+    position: absolute;
+    top: 375px;
+    font-weight: 10;
+}
+#saludoCinna {
+    width: 225px;
+    position: absolute;
+    top: 200px;
+}
+#testamento{
+    opacity: 0;
+    height: 0px;
+    width: 100%;
+    background: repeating-radial-gradient(white 0% 16%, var(--colorCeleste1) 16% 100%);
+    background-size: 25px 25px;
+    border: 5px solid var(--colorAzul1);
+    box-shadow: 0px 0px 15px var(--colorAzul1);
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+    display: none;
+}
+#testamentoFondo{
+    height: auto;
+    width: 85%;
+    padding: 20px;
+    border-radius: 30px 30px 30px 30px;
+    background: #fefcf5;
+    text-align: center;
+}
+#textoRayado{
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: underline var(--colorCeleste1) 3px;
+    line-height: 0px;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 767px) {
+    #testamento {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: absolute;
+        top: 50px;
+        margin-top: 0px
+    }
+    #textamentoFondo {
+        padding: 0px;
+    }
+}
