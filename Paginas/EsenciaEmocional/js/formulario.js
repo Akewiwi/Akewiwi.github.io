@@ -2,6 +2,7 @@ const submitButton = document.getElementById("submit");
 const inputText = document.getElementById('inputText');
 const audio1 = new Audio();
 audio1.src = "/imgs/buttonSound.mp3";
+const audio2 = document.getElementById("audio2");
 submitButton.addEventListener("click", function(event) {
     event.preventDefault();
 
