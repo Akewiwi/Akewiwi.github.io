@@ -6,6 +6,7 @@ submitButton.addEventListener("click", function(event) {
     event.preventDefault();
 
     if (inputText.value == "JULIANA" || inputText.value == "JULI") {
+         event.preventDefault();
         alert(`¡CONGRATS! Ya te sabes el procedimiento abajo testament y music (ENTENDES??? ES DE LA PRIMERA PAGINA ES CINE (BRUTAL PARENTESIS ENTRE PARENTESIS)) x.x`);
         audio2.play();
         loginForm.style.animation = "desvanecido2 4s linear"
